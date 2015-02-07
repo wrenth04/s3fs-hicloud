@@ -85,7 +85,7 @@ bool foreground2                  = false;
 bool nomultipart                  = false;
 std::string program_name;
 std::string service_path          = "/";
-std::string host                  = "http://s3.amazonaws.com";
+std::string host                  = "http://s3.hicloud.net.tw";
 std::string bucket                = "";
 
 //-------------------------------------------------------------------

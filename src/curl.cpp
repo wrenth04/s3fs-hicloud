@@ -2421,7 +2421,7 @@ int S3fsCurl::CompleteMultipartPostRequest(const char* tpath, string& upload_id,
 
   // make contents
   string postContent;
-  postContent += "<CompleteMultipartUpload>\n";
+  postContent += "<CompleteMultipartUpload xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\">\n";
   for(int cnt = 0; cnt < (int)parts.size(); cnt++){
     if(0 == parts[cnt].length()){
       DPRN("%d file part is not finished uploading.", cnt + 1);
