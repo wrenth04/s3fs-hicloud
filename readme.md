@@ -1,4 +1,4 @@
-s3fs for hicloud base on s3fs-1.74
+s3fs for hicloud base on s3fs-1.74 [![Build Status](https://secure.travis-ci.org/wrenth04/s3fs-hicloud.svg?branch=master)]
 
 S3FS is FUSE (File System in User Space) based solution to mount/unmount an Amazon S3 storage buckets and use system commands with S3 just like it was another Hard Disk.
 
