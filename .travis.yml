@@ -1,0 +1,21 @@
+language: cpp
+
+compiler:
+  - gcc
+
+before_script:
+  - sudo apt-get update && sudo apt-get build-essential libcurl4-openssl-dev libxml2-dev libfuse-dev comerr-dev libfuse2 libidn11-dev libkrb5-dev libldap2-dev libselinux1-dev libsepol1-dev pkg-config fuse-utils sshfs curl
+
+script:
+  - ./configure && make
+
+branches:
+  only:
+    - master
+
+env:
+  - LANG="en_US.UTF-8"
+
+os:
+  - linux
+
