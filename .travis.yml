@@ -4,7 +4,7 @@ compiler:
   - gcc
 
 before_script:
-  - sudo apt-get install build-essential libcurl4-openssl-dev libxml2-dev libfuse-dev comerr-dev libfuse2 libidn11-dev libkrb5-dev libldap2-dev libselinux1-dev libsepol1-dev pkg-config fuse-utils sshfs curl
+  - sudo apt-get update && sudo apt-get install build-essential libcurl4-openssl-dev libxml2-dev libfuse-dev comerr-dev libfuse2 libidn11-dev libkrb5-dev libldap2-dev libselinux1-dev libsepol1-dev pkg-config fuse-utils sshfs curl
 
 script:
   - ./configure && make
